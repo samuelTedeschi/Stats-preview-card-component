@@ -1,0 +1,140 @@
+/*
+  font-family: "Inter", sans-serif;
+   font-family: "Lexend Deca", sans-serif;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(233, 47%, 7%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+main{
+    background-color: hsl(244, 38%, 16%);
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    max-width: 1200px;
+}
+
+section{
+    padding-left: 60px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-img{
+    background-color: hsl(277, 64%, 61%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+}
+
+img{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 100%;
+    width: auto;
+    filter: opacity(40%);
+    display: block;
+    object-fit: cover;
+}
+
+.container-heder{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.container-heder h1{
+    font-family: "Inter", sans-serif;
+    font-size: 2.2rem;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 20px;
+    width: 400px;
+}
+
+.container-heder p{
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.5;
+    width: 350px;
+}
+
+.info{
+    display: flex;
+    padding-top: 70px;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+}
+
+.info h2{
+    color: hsl(0, 0%, 100%);
+    font-family:"Inter", sans-serif;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.info p{
+    color: hsla(0, 0%, 100%, 0.6);
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 15px;
+
+}
+
+@media (max-width: 375px){
+    body {
+        padding: 20px; /* Adicionar padding ao corpo para melhorar o espaçamento em telas menores */
+    }
+
+    main {
+        flex-direction: column; /* Alterar para coluna em telas menores */
+        flex-direction: column-reverse;
+        width: 100%; /* Ajustar a largura para 100% */
+    }
+
+    section {
+        padding: 20px; /* Ajustar padding */
+        width: 100%; /* Ajustar a largura para 100% */
+        align-items: center; /* Centralizar o conteúdo */
+    }
+
+    .container-heder h1 {
+        font-size: 1.5rem; /* Ajustar o tamanho da fonte */
+        width: 100%; /* Ajustar a largura para 100% */
+        text-align: center;
+    }
+
+    .container-heder p {
+        font-size: 15px; /* Ajustar o tamanho da fonte */
+        width: 100%; /* Ajustar a largura para 100% */
+        text-align: center;
+    }
+
+    .info {
+        flex-direction: column; /* Alterar para coluna em telas menores */
+        padding-top: 20px; /* Reduzir o padding */
+        width: 100%; /* Ajustar a largura para 100% */
+    }
+
+    .info h2, .info p {
+        width: 100%; /* Ajustar a largura para 100% */
+        text-align: center;
+    }
+
+}
